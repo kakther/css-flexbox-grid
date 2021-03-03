@@ -1,0 +1,111 @@
+html {
+    box-sizing: border-box
+  }
+  
+  /* The Universal Selector */
+  *, /* All elements*/
+  *::before, /* All ::before pseudo-elements */
+  *::after { /* All ::after pseudo-elements */
+    /* height & width will now include border & padding by default
+       but can be over-ridden as needed */
+    box-sizing: inherit;
+  }
+  
+  /* resets font size to be 62.5% of the user preference - 
+     in most browser configurations this will be 10px */
+  :root {
+    font-size: 62.5%
+  }
+  
+  body {
+    background-color: gray;
+  /* Use a system font, if none are available use an available sans-sarif   font */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+#status {
+  text-align: right;
+}
+
+  #profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: green 2px solid;
+    
+  }
+
+  #picture{
+    display: flex;
+    justify-content: center;
+  }
+
+#name {
+  text-align: center;
+}
+
+
+  #top {
+    background-color: white;
+    margin: 0;
+  }
+  
+  #mid{
+    background-color:lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #buttom {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+  }
+
+  #phone {
+    background-color: lightgreen;
+  }
+
+  #text {
+    background-color: green;
+  }
+
+  main {
+
+    height: 400px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  button {
+    margin: 0;
+    border: 0;
+    width: 73px;
+    padding: 0;
+  }
+
+  #buttonsArea {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: ;
+  }
